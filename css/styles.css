@@ -1,0 +1,165 @@
+.address {
+  font-style: normal;
+}
+
+/* ============ HEADER ===============*/
+
+.logo,
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration: none;
+}
+.logo-web,
+.logo-footer-web {
+  color: #2196f3;
+}
+
+.menu-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #2196f3;
+}
+
+.header-tell {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.header-mail {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: #2196f3;
+}
+
+.header-tell:hover,
+.header-tell:focus {
+  color: #2196f3;
+}
+/* ============ AND HEADER ==============*/
+
+/* =============== HERO =================*/
+
+.hero-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8f4d4d;
+}
+
+.modal-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background: rgb(56, 129, 212);
+  color: #ffffff;
+}
+/* ============== END HERO ================*/
+
+/* ============= ABOUT WORK ===============*/
+
+.work-title {
+  display: none;
+}
+
+.work-subtitle-list-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.work-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ============ END ABOUT WORK ==============*/
+
+/* ============ TEAM and ABOUT ==============*/
+
+.about-title,
+.team-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-list-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-list-position {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ============ END TEAM and ABOUT ============*/
+
+/* ================= CONTACTS =================*/
+
+.contact-list-address-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(182, 92, 92, 0.6);
+}
+
+.contact-list-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(184, 53, 53, 0.6);
+}
+/* ============= END CONTACTS ===============*/
