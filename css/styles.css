@@ -1,12 +1,48 @@
+:root {
+  --accent-color: #2196f3;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-text-color: #212121;
+  --main-text-color: #757575;
+}
+
+body {
+  font-family: var(--main-font);
+}
 .address {
   font-style: normal;
 }
 
+.portfolio-title,
+.button-title,
+.work-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.menu,
+.addres-menu,
+.work-list,
+.about-list,
+.team-list,
+.contact-list,
+.button-list,
+.portfolio-list {
+  list-style: none;
+}
+
 /* ============ HEADER ===============*/
 
-.logo,
-.logo-footer {
-  font-family: "Raleway", sans-serif;
+.logo {
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -14,102 +50,103 @@
   color: black;
   text-decoration: none;
 }
+
 .logo-web,
 .logo-footer-web {
   color: #2196f3;
 }
 
 .menu-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--accent-text-color);
   text-decoration: none;
+}
+
+.menu-link-studio,
+.menu-link-portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header-tell {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
 .header-mail {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
 .header-mail:hover,
 .header-mail:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header-tell:hover,
 .header-tell:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* ============ AND HEADER ==============*/
 
 /* =============== HERO =================*/
 
 .hero-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #8f4d4d;
+  color: #ffffff;
+  background-color: #2f303a;
 }
 
 .modal-button {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  background: rgb(56, 129, 212);
+  background: var(--accent-color);
   color: #ffffff;
 }
 /* ============== END HERO ================*/
 
 /* ============= ABOUT WORK ===============*/
 
-.work-title {
-  display: none;
-}
-
 .work-subtitle-list-item {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--accent-text-color);
 }
 .work-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--accent-text-color);
 }
 /* ============ END ABOUT WORK ==============*/
 
@@ -117,49 +154,106 @@
 
 .about-title,
 .team-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--accent-text-color);
 }
 .team-list-name {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--accent-text-color);
 }
 .team-list-position {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--accent-text-color);
 }
 /* ============ END TEAM and ABOUT ============*/
 
+/*=========== BUTTON ==========*/
+
+.button-list-item {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+}
+
+.button-list-item:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.button-list-item-all {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/*=========== END BUTTON ==========*/
+
+/*=========== PORTFOLIO ===========*/
+
+.portfolio-subtitle-list-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--accent-text-color);
+}
+
+.text-portfolio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+
+/*=========== END PORTFOLIO ===========*/
+
 /* ================= CONTACTS =================*/
 
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .contact-list-address-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: rgba(182, 92, 92, 0.6);
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .contact-list-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: rgba(184, 53, 53, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 /* ============= END CONTACTS ===============*/
