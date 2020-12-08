@@ -39,8 +39,73 @@ body {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* ============ HEADER ===============*/
 
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  margin-right: 93px;
+}
+
+.header .address {
+  margin-left: auto;
+}
+
+.address-item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.addres-menu {
+  display: flex;
+}
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -111,6 +176,12 @@ body {
 
 /* =============== HERO =================*/
 
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+  height: 600px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -118,21 +189,46 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 .modal-button {
+  min-width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   background: var(--accent-color);
   color: #ffffff;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
 }
+
 /* ============== END HERO ================*/
 
 /* ============= ABOUT WORK ===============*/
 
+.about-work .work-list {
+  display: flex;
+}
+.about-work .work-subtitle-list-item {
+  margin-bottom: 10px;
+}
+
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.work-list-item {
+  width: 270px;
+  height: 101px;
+}
+.about-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .work-subtitle-list-item {
   font-weight: 700;
   font-size: 14px;
@@ -152,6 +248,19 @@ body {
 
 /* ============ TEAM and ABOUT ==============*/
 
+.about .about-title {
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  padding-bottom: 179px;
+}
+
 .about-title,
 .team-title {
   font-weight: 700;
@@ -159,6 +268,7 @@ body {
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+  text-align: center;
 }
 .team-list-name {
   font-weight: 500;
@@ -175,11 +285,48 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team .team-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team-list-content-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.team-list-name {
+  margin-bottom: 10px;
+}
+
 /* ============ END TEAM and ABOUT ============*/
 
 /*=========== BUTTON ==========*/
 
+.button-list {
+  display: flex;
+  padding-top: 94px;
+  margin-left: 290px;
+}
+
 .button-list-item {
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  max-width: 145px;
+  height: 38px;
+  padding: 6px 22px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -193,6 +340,12 @@ body {
 }
 
 .button-list-item-all {
+  margin-right: 9px;
+  border: none;
+  cursor: pointer;
+  max-width: 73px;
+  height: 38px;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -204,6 +357,28 @@ body {
 /*=========== END BUTTON ==========*/
 
 /*=========== PORTFOLIO ===========*/
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.portfolio-container {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.portfolio-subtitle-list-item {
+  margin-bottom: 4px;
+}
+
+.portfolio-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
 
 .portfolio-subtitle-list-item {
   font-weight: 700;
@@ -256,4 +431,18 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+.container-logo-footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.contact-container {
+  padding-bottom: 60px;
+}
+
+.contact-list-link {
+  padding-top: 9px;
+}
+
 /* ============= END CONTACTS ===============*/
